@@ -1,0 +1,13 @@
+doctype html
+head
+   meta(charset='UTF-8')
+   title File Metadata Microservice
+   link(rel='stylesheet', href='css/reset.css')
+   link(rel='stylesheet', href='css/style.css')
+.container
+   h1.title File Metadata Microservice
+   form.upload-form(action='/upload', method="post", enctype="multipart/form-data")
+      input.upload-file(type='file', name='upload-file')
+      button.submit(type='submit') Submit
+   .note
+      p Note: Your file will be deleted immediately after checking
