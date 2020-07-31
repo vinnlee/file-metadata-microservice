@@ -1,9 +1,9 @@
-var express = require("express");
-var router = express.Router();
-var multer = require("multer");
-var home = require("../controller/home");
-var storage = multer.memoryStorage();
-var upload = multer({ storage: storage });
+const express = require("express");
+const router = express.Router();
+const multer = require("multer");
+const home = require("../controller/home");
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
 
 module.exports = function(app) {
    router.get('/', home.index);
